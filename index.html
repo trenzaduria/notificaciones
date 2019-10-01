@@ -21,61 +21,30 @@
 			<div class="row">
 				<div class="form-group form-group-lg col-6">
 					<label for="clienteNombre">Nombre del cliente</label>
-					<input type="text" name="clienteNombre" class="form-control form-control-lg" id="clienteNombre" v-model="clienteNombre" placeholder="Primer nombre">
+					<input type="text" name="clienteNombre" class="form-control form-control-lg" id="clienteNombre" v-model="clienteNombre">
 				</div>
 				<div class="form-group form-group-lg col-6">
 					<label for="clienteOF">Orden de transporte</label>
-					<input type="text" name="clienteOF" class="form-control form-control-lg" id="clienteOF" maxlength="9" v-model="clienteOF" placeholder="123.456.789">
+					<input type="text" name="clienteOF" class="form-control form-control-lg" id="clienteOF" maxlength="9" v-model="clienteOF">
 				</div>
-			</div>
-			<div class="row">
 				<div class="form-group form-group-lg col col-md-6">
 					<h2>Email</h2>
-					<textarea cols="70" rows="4" class="form-control form-control"><h2>¡Tu pedido está en camino!</h2><p>Hola, {{clienteNombre}}. La orden de transporte para que puedas realizar seguimiento es la <b><a href="https://www.starken.cl/seguimiento?codigo={{clienteOF}}">{{clienteOF}}</a></b></p></textarea>
+					<textarea cols="70" rows="4" class="form-control form-control"><h2>📦¡Tu pedido está en camino!</h2><p>Hola, {{clienteNombre}}. La orden de transporte para que puedas realizar seguimiento es la 👉<b><a href="https://www.starken.cl/seguimiento?codigo={{clienteOF}}">{{clienteOF}}</a></b></p></textarea>
 				</div>
-
-				<div class="form-group form-group-lg col col-md-6">
-					<h2>SMS</h2>
-					<textarea cols="70" rows="4" class="form-control form-control">Hola, {{clienteNombre}}. Tu pedido de Trenzaduría Fraile está en camino. En el siguiente enlace podrás consultar el estado de tu envío: https://www.starken.cl/seguimiento?codigo={{clienteOF}}</textarea>
-				</div>
-			</div>
-			<div class="row">
 				<div class="form-group form-group-lg col col-md-6">
 					<h2>En reparto</h2>
-					<textarea cols="70" rows="4" class="form-control form-control"><h2>¡Tu pedido está en reparto!</h2><p>Hola, {{clienteNombre}}. Recuerda que la orden de transporte para que puedas realizar seguimiento es la <b><a href="https://www.starken.cl/seguimiento?codigo={{clienteOF}}">{{clienteOF}}</a></b></p></textarea>
-
+					<textarea cols="70" rows="4" class="form-control form-control"><h2>🚚¡Tu pedido está en reparto!</h2><p>Hola, {{clienteNombre}}. Recuerda que la orden de transporte para que puedas realizar seguimiento es la 👉<b><a href="https://www.starken.cl/seguimiento?codigo={{clienteOF}}">{{clienteOF}}</a></b></p></textarea>
 				</div>
-				<div class="form-group form-group-lg col col-md-6">
-					<h2>En reparto SMS</h2>
-					<textarea cols="70" rows="4" class="form-control form-control">Hola, {{clienteNombre}}. Tu pedido de Trenzaduría Fraile está en reparto a domicilio. En el siguiente enlace podrás consultar el estado del mismo: https://www.starken.cl/seguimiento?codigo={{clienteOF}}</textarea>
-				</div>
-
-			</div>
-			<div class="row">
 				<div class="form-group form-group-lg col col-md-6">
 					<h2>En agencia mail</h2>
-					<textarea cols="70" rows="4" class="form-control form-control"><h2>¡Tu pedido está disponible para ser retirado!</h2><p>Recuerda que la orden de transporte para que puedas realizar seguimiento es la <b><a href="https://www.starken.cl/seguimiento?codigo={{clienteOF}}">{{clienteOF}}</a></b></p></textarea>
+					<textarea cols="70" rows="4" class="form-control form-control"><h2>🎉¡Tu pedido está disponible para ser retirado!</h2><p>Recuerda que la orden de transporte para que puedas realizar seguimiento es la 👉<b><a href="https://www.starken.cl/seguimiento?codigo={{clienteOF}}">{{clienteOF}}</a></b></p></textarea>
 				</div>
-				<div class="form-group form-group-lg col col-md-6">
-					<h2>En agencia SMS</h2>
-					<textarea cols="70" rows="4" class="form-control form-control">Hola, {{clienteNombre}}. Tu pedido de Trenzaduría Fraile está disponible para ser retirado en la agencia de Starken. En el siguiente enlace podrás consultar el estado del mismo: https://www.starken.cl/seguimiento?codigo={{clienteOF}}</textarea>
-				</div>
-			</div>
-			<div class="row">
 				<div class="form-group form-group-lg col col-md-6">
 					<h2>En agencia mail recordatorio</h2>
-					<textarea cols="70" rows="4" class="form-control form-control"><h2>¡Recuerda que tu pedido está disponible para ser retirado!</h2><p>Recuerda que la orden de transporte para que puedas realizar seguimiento es la <b><a href="https://www.starken.cl/seguimiento?codigo={{clienteOF}}">{{clienteOF}}</a></b></p></textarea>
-
-				</div>
-				<div class="form-group form-group-lg col col-md-6">
-					<h2>En agencia SMS recordatorio</h2>
-					<textarea cols="70" rows="4" class="form-control form-control">Hola, {{clienteNombre}}. Recuerda que tu pedido de Trenzaduría Fraile está disponible para ser retirado en la agencia de Starken. En el siguiente enlace podrás consultar el estado del mismo: https://www.starken.cl/seguimiento?codigo={{clienteOF}}</textarea>
+					<textarea cols="70" rows="4" class="form-control form-control"><h2>ℹ️¡Recuerda que tu pedido está disponible para ser retirado!</h2><p>La orden de transporte para que puedas realizar seguimiento es la 👉<b><a href="https://www.starken.cl/seguimiento?codigo={{clienteOF}}">{{clienteOF}}</a></b></p></textarea>
 				</div>
 			</div>
 
-	</div>
-	</div>
-	</div>
 	</form>
 	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
